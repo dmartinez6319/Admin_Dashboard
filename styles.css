@@ -20,7 +20,8 @@ body {
     display: grid;
     /* grid-template: 20% 80% 80% / 100% 20% 80%; */
     /* grid-template: 1fr 1fr 1fr 0fr 0fr 0fr/ 0.5fr 1fr 1fr 0fr 0fr 0fr; */
-    grid-template: 20% 80% /  20% 80%;
+    /* grid-template: 20% 80% /  12% 88%; */
+    grid-template: 1.5fr 5fr / minmax(200px,0.7fr) 5fr;
 
 }
 
@@ -34,12 +35,45 @@ aside {
 }
 
 nav {
-    display: grid;
-    grid-template: repeat(auto-fill,50px) / 150px;
-    background-color: palevioletred;
-    margin: 0.8rem;
-    margin-left: -3rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
 
+.nav-item {
+    margin: 5px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.nav-item:hover {
+    background-color: rgba(0, 0, 0, 0.24);
+    border-radius: 5px;
+}
+
+.side-icon {
+    text-align: center;
+    font-size: 1.5rem;
+    height: 30px;
+    width: 30px;
+    margin-right: 5px;
+}
+
+.nav-dashboard {
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 1.5rem;
+    
+    .side-icon {
+        height: 40px;
+        width: 40px;
+        font-size: 2.24rem;
+    }
+
+}
+
+.nav-section {
+    margin-top: 50px;
 }
 
 header {
@@ -53,13 +87,4 @@ main {
     background-color: yellowgreen;
     grid-area: 2 / 2 / 2 / 2;
 
-}
-
-.nav-item {
-    color: white;
-}
-
-.nav-home {
-    color: black;
-    font-size: 1.4rem;
 }
