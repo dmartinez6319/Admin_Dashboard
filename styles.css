@@ -11,6 +11,7 @@
     --color-secondary: #B2C1EB;
     --color-accent: #CCE7EA;
     overflow-x: hidden;
+    /* overflow-y: hidden; */
 }
 
 html, body {
@@ -220,7 +221,7 @@ main {
     .project-container {
         display: flex;
         flex-direction: column;
-        margin: 50px;
+        margin: 50px 0px 0px 50px;
         grid-area: 2 span;
         .project-grid {
             display: grid;
@@ -234,8 +235,7 @@ main {
                 justify-content:flex-end;
                 justify-content: space-between;
                 align-items: end;
-                border-radius: 20px;
-
+                border-top-right-radius: 25px;
                 h3, i {
                     background-color: rgb(145, 108, 214);
                     padding: 5px;
@@ -283,6 +283,61 @@ main {
     .side-container {
         display: flex;
         flex-direction: column;
+        gap: 25px;
+        margin: 50px 25px 0px 25px;
+
+        .side-group {
+
+            h2 {
+                margin-bottom: 10px;
+            }
+            .side-info {
+                display: flex;
+                flex-direction: column;
+                gap: 25px;
+                background-color: var(--color-primary);
+                padding: 5px 5px 5px 5px;
+                border-radius: 10px;
+
+                .side-grid-item {
+
+                    display: flex;
+                    flex-direction: column;
+                    gap: 5px;
+                    padding: 15px;
+
+
+                }
+                .people {
+                    display: flex;
+                    flex-direction: row;
+                    img {
+                        height: 50px;
+                        width: 50px;
+                        margin-right: 10px;
+                    }
+                    .user-info {
+                        display: flex;
+                        flex-direction: column;
+                        h4 {
+                            font-weight: 500;
+                        }
+                        p {
+                            font-weight: 300;
+                        }
+                    }
+                }
+                .announcement {
+                    border-bottom: 1px solid black;
+                }
+                .last-item {
+                    border: unset;
+                }
+
+            }
+
+        }
+
     }
 
 }
