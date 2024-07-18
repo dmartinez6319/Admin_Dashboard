@@ -1,4 +1,4 @@
 # Admin_Dashboard
 Odin Project Series<br>
-Uses form input and labels to create a sign up form with a bit of JS<br>
+Uses grid and flex to layout a dashboard of past Roblox projects of mines<br>
 Link: https://dmartinez6319.github.io/Admin_Dashboard/
